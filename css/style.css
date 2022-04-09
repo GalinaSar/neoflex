@@ -1,0 +1,195 @@
+
+@import "null.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+/* Прошу прощения что задание выполнено не полностью. Я не хотела просто копировать чужую корзину из интернета. На данный момент я учусь по платным урокам и еще не дошла до JS, поэтому задание связанное с корзиной не выполнила. */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 600;
+    font-style: normal;
+    background: #EAEAEA;
+}
+.main {
+    flex: 1 1 auto;
+}
+.header__container {
+    max-width: 1135px;
+    margin: 0 auto;
+}
+.header__content {
+    margin-bottom: 28px;
+}
+.content {
+    padding: 15px 0;
+    display: flex;
+    justify-content: end;
+}
+[class*="__logo"] {
+    flex: 1 1 auto;
+    color: #101010;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.22;
+}
+.content__like {
+    margin-right: 45px;
+    position: relative;
+}
+.content__namber-1 {
+    position: absolute;
+    top: -9px;
+    right: -8px;
+    background-color: #FFA542;
+    border-radius: 50%;
+    width: 17.4px;
+    height: 17.4px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+.content__basket {
+    position: relative;
+    margin-right: 31.31px;
+}
+.content__namber-2 {
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    background-color: #FFA542;
+    border-radius: 50%;
+    width: 17.4px;
+    height: 17.4px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+.services__container {
+    max-width: 1110px;
+    margin: 0 auto 20px;
+}
+.text {
+    font-size: 20px;
+    color: #838383;   
+    padding-bottom: 20px;
+}
+.services__items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.services__item {
+	flex: 1 1 33.333%;
+	max-width: 350px;
+}
+.item-services {
+	background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	height: 100%;
+}
+.item-services__image {
+    width: 219px;
+    height: 100%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+.item-services__image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.item-services__icon:not(:last-child) {
+	margin: 0px 0px 54px 0px;
+}
+.sale{
+    position: relative;
+}
+.sale::after {
+    content: "3527 ₽";
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    text-decoration-line: line-through;
+    font-size: 13px;
+    color: #FFCE7F;
+}
+.item-services__blok1:not(:last-child) {
+	margin: 0px 0px 26px 0px;
+}
+.item-services__blok2 {
+	margin: 0px 0px 32px 0px;
+}
+.bloks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 21px;
+    flex: 1 1 auto;
+}
+.item-services__name {
+    color: #1C1C27;
+}
+.item-services__star {
+    color: #838383;;
+    padding-left: 33.33px;
+    background: url(../image/star.svg) 0 -1px / 23.33px 21.93px no-repeat;
+}
+.item-services__price {
+   color: #FFA542 ;
+}
+.footer__container {
+    max-width: 1110px;
+    min-height: 149px;
+    background-color:  #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px 30px 0px 0px;
+    margin: 0 auto;
+    padding: 29px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__logo {
+    flex: none;
+}
+.items  {
+    color: #000000;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__group-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__terms {
+    color: #000000;
+    font-weight: 400;
+}
+.languages__ru {
+    background: url(../image/Group.svg) 0 0 / 20px 20px no-repeat;
+    color: #FFA542;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 37px;
+}
+.languages__en {
+    color: #101010;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 17px;
+}
+.footer__group-3 a:not(:last-child) {
+	margin: 0px 17.9px 0px 0px;
+}
