@@ -1,44 +1,64 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 li {
-	list-style: none;
+  list-style: none;
 }
+
 a {
-	color: inherit;
+  color: inherit;
 }
+
 a,
 a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
+
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-weight: inherit;
-	font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
+
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
-body,
-html {
-	height: 100%;
-	line-height: 1;
+
+html,
+body {
+  height: 100%;
+  background: #EAEAEA;
+}
+
+[class*="__container"] {
+  max-width: 1110px;
+  margin: 0 auto;
 }
 .wrapper {
+   max-width: 1440px;
 	min-height: 100%;
-	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
+  
+}
+main {
+  position: relative;
+  flex: 1 1 auto;
+  z-index: 2;
 }

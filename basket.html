@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Basket</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <section class="header__content">
+               <h1 class="header__logo"><a href="index.html">QPICK</a></h1>
+               <div class="header__like like">
+                  <a href="#" class="like__link"><img src="image/like.svg" alt="like"></a>
+                  <div class="like__number-of">2</div>
+               </div>
+               <div class="header__basket basket">
+                  <a href="basket.html" class="basket__link"><img src="image/basket.svg" alt="basket"></a>
+                  <div class="basket__number-of">1</div>
+               </div>
+            </section>
+         </div>
+      </header>
+      <main class="main">
+         <div class="main__container">
+            <section class="page-basket">
+               <div class="page-basket__title">Корзина</div>
+               <div class="page-basket__content" id="basket">
+                  <div class="content-items">
+                     <div class="content-items__top top-content">
+                        <div class="top-content__picture">
+                           <img src="image/headphones_S852I.jpg" alt="headphones">                          
+                        </div>
+                        <div class="top-content__description">
+                           <p class="top-content__name">Apple BYZ S852I</p>
+                           <p class="top-content__price price">2 927 ₽</p>
+                        </div>
+                        <div class="top-content__delete">
+                           <a href="#" class="top-content__link"><img src="image/delete.svg" alt="delete"></a>
+                        </div>
+                     </div>
+                     <div class="top-content__bottom bottom-content count">
+                        <div class="bottom-content__number number-btn">
+                           <button type="button" class="number-btn__minus"><span class="center">-</span></button>
+                           <input type="number" value="1" data-price="2927" class="number-btn__text input" disabled></input>
+                           <button type="button" class="number-btn__plus">+</button>
+                        </div>
+                        <div class="bottom-content__total subtotal">2 927 ₽</div>
+                     </div>
+                  </div>
+                  <div class="page-basket__total total">
+                     <aside class="total__box">
+                        <div class="total__text">ИТОГО</div>
+                        <div class="total__total-price"><span id="total-price"></span> ₽</div>
+                     </aside>
+                     <div class="total__button">Перейти к оформлению</div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <h1 class="footer__logo"><a href="#">QPICK</a></h1>
+            <ul class="footer__items">
+               <li class="footer__item"><a href="#">Избранное</a></li>
+               <li class="footer__item"><a href="basket.html">Корзина</a></li>
+               <li class="footer__item"><a href="#">Контакты</a></li>
+            </ul>
+            <div class="footer__service">
+               <h4 class="footer__sub-title"><a href="#">Условия сервиса</a></h4>
+               <ul class="footer__languagu">
+                  <li class="footer__kz"><a href="#">Каз</a></li>
+                  <li class="footer__ru"><a href="#">Рус</a></li>
+                  <li class="footer__en"><a href="#">Eng</a></li>               
+               </ul>
+            </div>
+            <ul class="footer__connection">
+               <li class="footer__vk"><a href="https://vk.com/"><img src="image/VK.svg" alt="vk"></a></li>
+               <li class="footer__telegram"><a href="https://web.telegram.org/z/"><img src="image/Telegram.svg" alt="telegram"></a></li>
+               <li class="footer__whatsapp"><a href="https://web.whatsapp.com/"><img src="image/Whatsapp.svg" alt="whatsapp"></a></li>
+            </ul>
+         </div>
+      </footer>
+   </div>
+   <script src="js/app.js"></script>
+</body>
+</html>
